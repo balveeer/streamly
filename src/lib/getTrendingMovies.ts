@@ -19,6 +19,7 @@ export async function getTrendingMovies(): Promise<Movie[]> {
       throw new Error('Failed to fetch from TMDB API');
     }
     const data = await response.json();
+    console.log(data.results)
     return data.results;
   } catch (error) {
     console.error('Error fetching trending movies:', error);
