@@ -8,7 +8,7 @@ export default async function TrendingPage() {
       <h1 className='text-6xl font-bold'>Trending Movies</h1>
       <ul>
         {movies.map((movie) => (
-          <li key={movie.id}>{movie.title}</li>
+          <li key={movie.id}>{movie}</li>
         ))}
       </ul>
     </div>
